@@ -20,6 +20,7 @@ import com.BikkadIT.SpringRest.Services.CourseServiceI;
 
 
 @RestController
+@RequestMapping("/SpringRest")
 public class CourseController {
 	@Autowired
 	CourseServiceI courseServiceI;
