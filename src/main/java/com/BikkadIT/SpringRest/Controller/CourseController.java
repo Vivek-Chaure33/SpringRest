@@ -19,16 +19,15 @@ import com.BikkadIT.SpringRest.Services.CourseServiceI;
 
 
 
-@Controller
+@RestController
 public class CourseController {
 	@Autowired
 	CourseServiceI courseServiceI;
 	
 	@GetMapping("/home")
 	public String home(Model model) {
-		String s="This is Home page";
-		model.addAttribute("s",s);
-		return "home";
+		
+		return "This is home page";
 	}
 	@GetMapping("/courses")
 	public List<Course> getCourses() {
